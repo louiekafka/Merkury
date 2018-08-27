@@ -1,0 +1,660 @@
+/****************************Fonts*******************************************************/
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('../fonts/Roboto/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+/****************************Variables*******************************************************/
+/****************************General Reset*******************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul,
+li {
+  list-style-type: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+/************************Custom Settings***********************************************************/
+html {
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+body {
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+section {
+  padding: 50px 0;
+}
+p,
+ul,
+ol {
+  margin-bottom: 0.5em;
+}
+p a,
+h5 a {
+  font-weight: bold;
+  transition: all 0.5s ease-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+/*******************************NAVBAR****************************************************/
+#mainNav {
+  background-color: transparent;
+  padding-top: 20px;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+#mainNav .navbar-toggler {
+  padding: 13px;
+  border: 0;
+  color: #FFFFFF;
+}
+#mainNav .navbar-brand {
+  margin-right: 0;
+}
+#mainNav .navbar-brand img {
+  width: 70%;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  padding: 7px 15px !important;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-family: 'roboto', Georgia, serif;
+  border: 3px solid transparent;
+}
+#mainNav .navbar-nav .nav-item #login {
+  padding: 8px 30px !important;
+  background-color: #0e1a35;
+  color: #5584ff;
+  border: 1px solid #5584ff;
+  border-radius: 25px;
+}
+#mainNav .navbar-nav .nav-item #login:hover {
+  background: #5584ff;
+  color: #FFFFFF !important;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FFFFFF !important;
+  background: #5584ff !important;
+  border-radius: 17px;
+}
+/*******************************HEADER****************************************************/
+header {
+  color: #FFFFFF;
+  background-image: url('../../img/header-img.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+header .container {
+  background-image: url('../../img/graph.png');
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100%, 0;
+  }
+}
+header .container .intro-text {
+  padding-top: 150px;
+}
+header .container .intro-text h1 {
+  font-size: 40px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'roboto-thin', Arial, sans-serif;
+}
+header .container .intro-text h3 {
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'roboto', Georgia, serif;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+header .container .intro-text a {
+  padding: 8px 34px;
+  font-family: 'roboto', Georgia, serif;
+  background: #5584ff;
+  color: #FFFFFF;
+  border-radius: 25px;
+}
+header .container .intro-text a:hover {
+  background: transparent;
+  border: 1px solid #5584ff;
+}
+/********************************SERVICES***************************************************/
+#services {
+  padding: 100px 0 50px 0;
+  background-color: #FFFFFF;
+  margin-top: -120px;
+}
+#services .container {
+  margin-top: 100px;
+}
+#services .container .row .col-md-4 img {
+  margin-bottom: 30px;
+  height: 85px;
+}
+#services .container .row .col-md-4 img:hover {
+  transform: scale(1.1);
+  transition: all o 0.2s ease-out;
+}
+#services .container .row .col-md-4 #service1::after,
+#services .container .row .col-md-4 #service2::after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  top: 50px;
+  width: 10vw;
+  height: 1px;
+  background: #e1e4eb;
+}
+#services .container .row .col-md-4 h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'roboto', Georgia, serif;
+}
+#services .container .row .col-md-4 p {
+  font-family: 'roboto', Georgia, serif;
+  color: #b2bbcd;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#services .container .row .col-md-4 a {
+  color: #000000;
+  border: 1px solid #cccccc;
+  width: 70%;
+  margin-bottom: 20px;
+  font-family: 'roboto', Georgia, serif;
+  border-radius: 25px;
+}
+#services .container .row .col-md-4 a:hover {
+  background: #cccccc;
+}
+/**************************FEATURES*********************************************************/
+#features {
+  background: #FFFFFF;
+}
+#features .container .row .col-md-5 {
+  margin-top: 100px;
+}
+#features .container .row .col-md-5 h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 25px;
+  font-family: 'roboto', Georgia, serif;
+  font-weight: 400;
+  color: #000000;
+}
+#features .container .row .col-md-5 p {
+  font-family: 'roboto', Georgia, serif;
+  color: #a3adc3;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+#features .container .row .col-md-5 span {
+  display: flex;
+  color: #5584ff;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+#features .container .row .col-md-5 span img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+/**************************DRAG + DROP*********************************************************/
+#drag-drop {
+  background-image: url(../../img/header-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#drag-drop .container {
+  padding: 50px 25px;
+  background-image: url('../../img/graph.png');
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite;
+}
+@keyframes animatedBackground {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+#drag-drop .container .row .col-md-4 h3 {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+#drag-drop .container .row .col-md-4 h3 span {
+  color: #999999;
+}
+#drag-drop .container .row .col-md-4 h3 i {
+  float: right;
+  margin-top: 5px;
+}
+#drag-drop .container .row .col-md-4 .card {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+#drag-drop .container .row .col-md-4 .card .card-body {
+  padding: 12px;
+}
+#drag-drop .container .row .col-md-4 .card .card-body span {
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background: #5584ff;
+}
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown {
+  float: right;
+}
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown .btn-secondary {
+  background: transparent;
+  color: #8492af;
+  border: none;
+}
+#drag-drop .container .row .col-md-4 .card .card-body .dropdown .dropdown-menu a:hover {
+  cursor: pointer;
+  background: #5584ff;
+  color: #FFFFFF;
+}
+#drag-drop .container .row .col-md-4 .card .card-body .card-title {
+  margin-bottom: 6px;
+}
+#drag-drop .container .row .col-md-4 .card .card-body .card-text {
+  margin-left: 42px;
+}
+#drag-drop .container .row #first-col #draggable {
+  cursor: move;
+}
+#drag-drop .container .row #second-col #droppable {
+  padding: 8px;
+  border: 1px dashed #8492af;
+  background: transparent;
+  color: #999999;
+  text-align: center;
+}
+#drag-drop .container .row #third-col {
+  margin-top: 65px;
+}
+#drag-drop .container .row #third-col h2 {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: 'roboto-thin', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+#drag-drop .container .row #third-col p {
+  font-size: 17px;
+  color: #999999;
+  font-family: 'roboto', Georgia, serif;
+  margin-bottom: 20px;
+}
+#drag-drop .container .row #third-col a img {
+  float: left;
+  margin-right: 10px;
+}
+/*****************************Template******************************************************/
+#template {
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+#template .container h2 {
+  margin-bottom: 30px;
+  font-family: 'roboto', Georgia, serif;
+}
+#template .container p {
+  font-size: 16px;
+  color: #b2bbcd;
+  font-family: 'roboto-medium', Arial, sans-serif;
+  line-height: 1.5;
+}
+#template .container #intro-p {
+  margin-bottom: 100px;
+}
+#template .container .row .col-md-3 h5 {
+  margin-bottom: 20px;
+  font-family: 'roboto-bold', Helvetica, Arial, sans-serif;
+}
+#template .container .row .col-md-3 p {
+  font-family: 'roboto', Georgia, serif;
+}
+#template .container .row #left-side::before {
+  content: '';
+  width: 0;
+  height: 47px;
+  background: url('../../img/icons/line-right.png') no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  transform: scaleX(-1);
+  z-index: 1;
+}
+#template .container .row #right-side::before {
+  content: '';
+  width: 0;
+  height: 47px;
+  background: url('../../img/icons/line-right.png') no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 1;
+}
+#template .container .row .col-md-6 img {
+  animation: float 9s ease-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#template .container:hover #right-side::before,
+#template .container:hover #left-side::before {
+  width: 46vw;
+  transition: width 1.5s ease-out;
+}
+/*******************************Pricing****************************************************/
+#pricing {
+  background: #f2f2f2;
+}
+#pricing .container #title {
+  margin: 50px;
+  font-family: 'roboto-thin', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+#pricing .container .row .col-md-4 .card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px -1px 35px 9px #e6e6e6;
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#pricing .container .row .col-md-4 .card .card-body {
+  padding: 20px 0;
+}
+#pricing .container .row .col-md-4 .card .card-body .card-title {
+  margin-bottom: 50px;
+  font-family: 'roboto-medium', Arial, sans-serif;
+  font-size: 20px;
+}
+#pricing .container .row .col-md-4 .card .card-body h2 {
+  margin-bottom: 30px;
+  font-family: 'roboto-medium', Arial, sans-serif;
+  font-weight: 700;
+}
+#pricing .container .row .col-md-4 .card .card-body h2 .dollar-sign {
+  color: #000000 !important;
+  font-size: 19px;
+  font-family: 'roboto-bold', Helvetica, Arial, sans-serif;
+}
+#pricing .container .row .col-md-4 .card .card-body h2 span {
+  color: #c2c9d7 !important;
+  font-size: 19px;
+}
+#pricing .container .row .col-md-4 .card .card-body .details {
+  padding-bottom: 10px;
+}
+#pricing .container .row .col-md-4 .card .card-body .details img {
+  width: 15px;
+  margin-right: 10px;
+}
+#pricing .container .row .col-md-4 .card .card-body .details p {
+  display: inline;
+  color: #a3adc3;
+}
+#pricing .container p {
+  color: #a3adc3;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+#pricing .container a {
+  padding: 8px 40px;
+  background: #5584ff;
+  color: #FFFFFF;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+#pricing .container a:hover {
+  background: #234286;
+}
+#pricing .container a::before,
+#pricing .container a::after {
+  content: '';
+  position: absolute;
+  width: 20vw;
+  height: 1px;
+  background: #e1e4eb;
+}
+#pricing .container a::before {
+  top: 20px;
+  left: 200px;
+}
+#pricing .container a::after {
+  top: 20px;
+  right: 200px;
+}
+/**************************Footer*********************************************************/
+footer {
+  padding: 30px;
+  background: #0e1a35;
+}
+footer .container .row .col-md-6 {
+  margin: 10px 0;
+  display: flex;
+}
+footer .container .row .col-md-6 p,
+footer .container .row .col-md-6 a {
+  color: #c2c9d7;
+  font-size: 16px;
+}
+footer .container .row .col-md-6 a {
+  margin-left: 20px;
+}
+footer .container .row .col-md-6 a:hover {
+  color: #FFFFFF;
+}
+/*****************************MEDIA QUERY******************************************************/
+@media (min-width: 300px) {
+  #mainNav.navbar-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #192e5d;
+  }
+}
+@media (max-width: 768px) {
+  #mainNav {
+    background-color: #0e1a35;
+  }
+  #mainNav .navbar-toggler {
+    padding: 5px;
+  }
+  header .container .intro-text h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  #services,
+  #template {
+    padding-bottom: 0;
+  }
+  #features {
+    padding-top: 0;
+  }
+  #service1::after,
+  #service2::after {
+    display: none !important;
+  }
+  #drag-drop .container .row h3 i {
+    display: none !important;
+  }
+  #template .container .row .col-md-6 {
+    margin: 25px 0;
+  }
+  footer {
+    padding: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #template .container:hover #right-side::before,
+  #template .container:hover #left-side::before {
+    width: 36vw !important;
+    top: 35px;
+  }
+  #pricing .row .col-md-4 .card {
+    width: 100% !important;
+  }
+}
+/***********************************************************************************/
